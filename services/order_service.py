@@ -87,10 +87,10 @@ class OrderService:
                     "quantity": cart_item.quantity,
                     "subtotal": subtotal
                 })
-                order = Order(
-                    user_id=user_id,
-                    status="new",
-                    total_price=total_price
+            order = Order(
+                user_id=user_id,
+                status="new",
+                total_price=total_price
             )
 
             db.add(order)
