@@ -7,5 +7,5 @@ JWT_EXPIRATION_HOURS = 24
 # SMTP настройки для отправки писем
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
-SMTP_EMAIL = "sasacernysevskij@gmail.com" 
-SMTP_PASSWORD = "qrgawqvxbiwobjfj"  
+SMTP_EMAIL = os.getenv("SMTP_EMAIL", "sasacernysevskij@gmail.com")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "qrgawqvxbiwobjfj")
