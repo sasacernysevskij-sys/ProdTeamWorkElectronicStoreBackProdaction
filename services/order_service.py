@@ -127,13 +127,13 @@ class OrderService:
             db.refresh(order)
 
             # Отправляем письмо
-            self.send_order_email(
-                db=db,
-                user_id=user_id,
-                order_id=order.id,
-                total_price=total_price,
-                items=order_items_response
-            )
+            # self.send_order_email(
+            #     db=db,
+            #     user_id=user_id,
+            #     order_id=order.id,
+            #     total_price=total_price,
+            #     items=order_items_response
+            # )
 
             return {
                 "message": "Заказ успешно создан",
