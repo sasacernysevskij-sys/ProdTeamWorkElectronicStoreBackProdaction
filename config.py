@@ -4,7 +4,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-123")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///shop.db")
 JWT_EXPIRATION_HOURS = 24
 
-# SMTP настройки для отправки писем
+# SMTP настройки для отправки писем1
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_EMAIL = os.getenv("SMTP_EMAIL", "sasacernysevskij@gmail.com")
