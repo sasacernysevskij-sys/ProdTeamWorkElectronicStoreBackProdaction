@@ -88,9 +88,9 @@ class OrderService:
                     "subtotal": subtotal
                 })
                 order = Order(
-                user_id=user_id,
-                status="new",
-                total_price=total_price
+                    user_id=user_id,
+                    status="new",
+                    total_price=total_price
             )
 
             db.add(order)
